@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Benji Richheimer | Sports & Business Analytics</title>
+<style>
+  :root {
+    --ink: #1a1d24;
+    --muted: #5b6270;
+    --line: #e4e6eb;
+    --accent: #1f5fbf;
+    --bg: #fafafa;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.6;
+  }
+  .wrap { max-width: 820px; margin: 0 auto; padding: 72px 24px 48px; }
+  header h1 { font-size: 2.4rem; letter-spacing: -0.02em; line-height: 1.15; }
+  header .role { color: var(--accent); font-weight: 600; margin-top: 6px; }
+  header p.intro { color: var(--muted); margin-top: 18px; font-size: 1.05rem; max-width: 680px; }
+  .links { margin-top: 20px; display: flex; gap: 18px; flex-wrap: wrap; }
+  .links a { color: var(--accent); text-decoration: none; font-weight: 500; }
+  .links a:hover { text-decoration: underline; }
+  h2 {
+    font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em;
+    color: var(--muted); margin: 56px 0 18px; padding-bottom: 10px;
+    border-bottom: 1px solid var(--line);
+  }
+  .project {
+    display: block; background: #fff; border: 1px solid var(--line);
+    border-radius: 10px; padding: 24px 26px; margin-bottom: 18px;
+    text-decoration: none; color: inherit;
+    transition: border-color .15s, box-shadow .15s, transform .15s;
+  }
+  .project:hover { border-color: var(--accent); box-shadow: 0 6px 20px rgba(31,95,191,.08); transform: translateY(-2px); }
+  .project h3 { font-size: 1.25rem; }
+  .project .tags { color: var(--accent); font-size: 0.85rem; font-weight: 600; margin: 4px 0 10px; }
+  .project p { color: var(--muted); }
+  .project .cta { display: inline-block; margin-top: 12px; color: var(--accent); font-weight: 600; font-size: 0.95rem; }
+  footer { margin-top: 64px; color: var(--muted); font-size: 0.85rem; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Benji Richheimer</h1>
+    <div class="role">Sports &amp; Business Analytics</div>
+    <p class="intro">
+      MS Business Analytics student at the University of Denver's Daniels College of Business
+      and Sports Analytics Research Assistant. I build statistical models and visualizations in
+      R, Python, and SQL to analyze player performance and team strategy. Below are a few projects
+      that show how I turn data into decisions.
+    </p>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/benji-richheimer/" target="_blank">LinkedIn</a>
+      <a href="mailto:benji.richheimer@gmail.com">Email</a>
+      <a href="https://github.com/benjirichheimer" target="_blank">GitHub</a>
+    </div>
+  </header>
+
+  <h2>Projects</h2>
+
+  <a class="project" href="best-shooter-index.html">
+    <h3>Best Shooter Index: Rethinking How We Measure NBA Shooting</h3>
+    <div class="tags">R · hoopR · tidyverse · Regression</div>
+    <p>
+      Traditional metrics like eFG% and TS% reward rim-finishers, ranking players like Rudy Gobert
+      above Stephen Curry. Using 2024-25 NBA play-by-play data, I built a custom shot-difficulty score
+      that accounts for shot distance, step-backs, fadeaways, shot clock, clutch situations, and
+      opponent defense. I combined it with efficiency to create a new index that finds the league's
+      best perimeter shot-makers, then checked it against volume and efficiency benchmarks.
+    </p>
+    <span class="cta">View project →</span>
+  </a>
+
+  <a class="project" href="Brewers_2026_Champions_Analysis.html">
+    <h3>How Does the 2026 Brewers Championship Run Compare?</h3>
+    <div class="tags">Python · pandas · Statistical Testing · Interactive Notebook</div>
+    <p>
+      An interactive statistical analysis comparing the 2026 Milwaukee Brewers' championship season
+      with past World Series champions. Using historical team data, I test where the Brewers' regular
+      season and postseason performance rank among title winners, and whether their run stands out
+      as statistically unusual.
+    </p>
+    <span class="cta">View project →</span>
+  </a>
+
+  <!-- TO ADD ANOTHER PROJECT: copy everything from <a class="project" ...> down to </a> above,
+       paste it here, and change the file name, title, tags, and description. -->
+
+  <footer>© 2026 Benji Richheimer</footer>
+</div>
+</body>
+</html>
